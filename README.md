@@ -6,5 +6,5 @@ sharding-jdbc version
 <dependency>
       <groupId>io.shardingjdbc</groupId>
       <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-      <version>3.0.0.M1</version>
+      <version>3.0.0.M3</version>
 </dependency>
