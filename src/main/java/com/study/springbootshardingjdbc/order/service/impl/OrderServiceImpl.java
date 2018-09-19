@@ -3,6 +3,7 @@ package com.study.springbootshardingjdbc.order.service.impl;
 import com.study.springbootshardingjdbc.order.dao.OrderDao;
 import com.study.springbootshardingjdbc.order.service.OrderService;
 import com.study.springbootshardingjdbc.order.vo.OrderVo;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,5 +20,10 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void save(OrderVo orderVo) {
         orderDao.save(orderVo);
+    }
+
+    @Override
+    public List<OrderVo> listByUserId(List<Integer> userIds) {
+        return orderDao.listByUserId(userIds);
     }
 }

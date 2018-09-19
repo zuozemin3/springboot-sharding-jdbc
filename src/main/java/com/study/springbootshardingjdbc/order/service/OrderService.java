@@ -1,6 +1,7 @@
 package com.study.springbootshardingjdbc.order.service;
 
 import com.study.springbootshardingjdbc.order.vo.OrderVo;
+import java.util.List;
 
 /**
  * @author kris
@@ -9,4 +10,6 @@ import com.study.springbootshardingjdbc.order.vo.OrderVo;
 public interface OrderService {
 
     void save(OrderVo orderVo);
+
+    List<OrderVo> listByUserId(List<Integer> userIds);
 }
